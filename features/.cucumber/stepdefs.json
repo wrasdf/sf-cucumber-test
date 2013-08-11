@@ -1,0 +1,41 @@
+[
+  {
+    "source": "^a user login the page$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/create_step.rb:4",
+    "steps": [
+      {
+        "name": "a user login the page",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the user click the create item on the navigation bar$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/create_step.rb:9",
+    "steps": [
+      {
+        "name": "the user click the create item on the navigation bar",
+        "args": [
+
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the create page content will show to us$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/create_step.rb:14",
+    "steps": [
+      {
+        "name": "the create page content will show to us",
+        "args": [
+
+        ]
+      }
+    ]
+  }
+]
