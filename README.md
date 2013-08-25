@@ -1341,4 +1341,3 @@ The only thing that needs instantiating is the App class - from then on
 pages don't need to be initialized, they are now returned by methods on
 @app. Maintenance win!
 
-

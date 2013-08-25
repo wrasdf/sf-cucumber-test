@@ -1,0 +1,4 @@
+dev:
+  base_url: http://localhost:8080/pmp/pages
+ci:
+  base_url: http://10.18.9.253:8080/pmp/pages

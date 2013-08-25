@@ -1,5 +1,4 @@
-Dir[File.dirname(__FILE__) + '/libs/*/*.rb'].each { |file| require file }
-
+require 'yaml'
 require "Capybara"
 require "rspec"
 require "Capybara/rspec"
@@ -8,9 +7,14 @@ require 'capybara/poltergeist'
 require 'selenium-webdriver'
 require 'site_prism'
 
+Dir[File.dirname(__FILE__) + '/impl/**/*.rb'].each { |file| require file }
+
+BASE_URL = YAML.load_file(File.dirname(__FILE__) + '/cucumber.yml')[ENV['env']]["base_url"]
+
 if ENV['HEADLESS'] == 'true'
 
   Capybara.default_driver = :poltergeist
+  Capybara.javascript_driver = :poltergeist
   Capybara.register_driver :poltergeist do |app|
     options = {
         :js_errors => true,
@@ -25,8 +29,8 @@ if ENV['HEADLESS'] == 'true'
 else
 
   Capybara.configure do |config|
-    config.default_driver = :selenium
-    config.javascript_driver = :selenium
+    config.default_driver = :chrome
+    config.javascript_driver = :chrome
     config.run_server = false
     config.default_selector = :css
     config.default_wait_time = 5
@@ -36,11 +40,8 @@ else
     config.ignore_hidden_elements = false
   end
 
-  Capybara.register_driver :selenium do |app|
-    profile = Selenium::WebDriver::Firefox::Profile.new
-    profile["browser.cache.disk.enable"] = false
-    profile["browser.cache.memory.enable"] = false
-    Capybara::Selenium::Driver.new(app, :browser => :firefox, profile: profile)
+  Capybara.register_driver :chrome do |app|
+    Capybara::Selenium::Driver.new(app, :browser => :chrome)
   end
 
 end

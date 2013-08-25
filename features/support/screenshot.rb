@@ -2,7 +2,7 @@ module Screenshots
 
   if Cucumber::OS_X
     def embed_screenshot(id)
-      `screencapture -t png #{id}.png`
+      `screencapture -t png #{File.dirname(__FILE__)+"/screenshots/"}#{id}.png`
       embed("#{id}.png", "image/png")
     end
   elsif Cucumber::WINDOWS

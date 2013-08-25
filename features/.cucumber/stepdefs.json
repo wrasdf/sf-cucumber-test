@@ -1,11 +1,35 @@
 [
   {
-    "source": "^a user login the page$",
+    "source": "^用户退出$",
     "flags": "",
-    "file_colon_line": "features/steps_definitions/tasks/create_step.rb:4",
+    "file_colon_line": "features/steps_definitions/base/base_steps.rb:4",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^我是\"王五\"登陆方案创建页面$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/plans/plan_base_steps.rb:4",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I create a new plan$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/plans/plan_base_steps.rb:12",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^我输入创建方案的内容$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/plans/plan_create_steps.rb:4",
     "steps": [
       {
-        "name": "a user login the page",
+        "name": "我输入创建方案的内容",
         "args": [
 
         ]
@@ -13,12 +37,12 @@
     ]
   },
   {
-    "source": "^the user click the create item on the navigation bar$",
+    "source": "^点击创建方案的按钮$",
     "flags": "",
-    "file_colon_line": "features/steps_definitions/tasks/create_step.rb:9",
+    "file_colon_line": "features/steps_definitions/plans/plan_create_steps.rb:8",
     "steps": [
       {
-        "name": "the user click the create item on the navigation bar",
+        "name": "点击创建方案的按钮",
         "args": [
 
         ]
@@ -26,16 +50,104 @@
     ]
   },
   {
-    "source": "^the create page content will show to us$",
+    "source": "^我在方案列表中看见新创建的方案$",
     "flags": "",
-    "file_colon_line": "features/steps_definitions/tasks/create_step.rb:14",
+    "file_colon_line": "features/steps_definitions/plans/plan_create_steps.rb:13",
     "steps": [
       {
-        "name": "the create page content will show to us",
+        "name": "我在方案列表中看见新创建的方案",
         "args": [
 
         ]
       }
+    ]
+  },
+  {
+    "source": "^I am \"张三\" to login the system$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_base_steps.rb:4",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^I create a new task$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_base_steps.rb:10",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^navigate to create task page$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_create_steps.rb:4",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^user input details for create new task$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_create_steps.rb:9",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^click confirm button$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_create_steps.rb:13",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^user could see the new task will on the top of the task list$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_create_steps.rb:18",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^我在该任务详情页面点击“接受任务”$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_operation_steps.rb:4",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^该任务出现在“我的承接”的“已承接”列表$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_operation_steps.rb:11",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^该任务出现在“我的承接”的“全部”列表$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_operation_steps.rb:24",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^我在该任务详情页面点击“拒绝任务”$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_operation_steps.rb:37",
+    "steps": [
+
+    ]
+  },
+  {
+    "source": "^该任务出现在“我的承接”的“已拒绝”列表$",
+    "flags": "",
+    "file_colon_line": "features/steps_definitions/tasks/task_operation_steps.rb:44",
+    "steps": [
+
     ]
   }
 ]

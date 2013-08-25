@@ -1,0 +1,471 @@
+[
+  {
+    "comments": [
+      {
+        "value": "#!/bin/env ruby",
+        "line": 1
+      },
+      {
+        "value": "# encoding: utf-8",
+        "line": 2
+      }
+    ],
+    "keyword": "Feature",
+    "name": "用户登陆后，可以创建方案",
+    "line": 4,
+    "description": "\nGiven 我是\"王五\"登陆方案创建页面",
+    "id": "用户登陆后，可以创建方案",
+    "uri": "features/support/cases/plans/plan_base.feature"
+  },
+  {
+    "comments": [
+      {
+        "value": "#!/bin/env ruby",
+        "line": 1
+      },
+      {
+        "value": "# encoding: utf-8",
+        "line": 2
+      }
+    ],
+    "keyword": "Feature",
+    "name": "王五 登陆系统并进入方案页面, 可以创建方案。",
+    "line": 5,
+    "description": "",
+    "tags": [
+      {
+        "name": "@plan",
+        "line": 4
+      }
+    ],
+    "id": "王五-登陆系统并进入方案页面,-可以创建方案。",
+    "uri": "features/support/cases/plans/plan_create.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "line": 7,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "我是\"王五\"登陆方案创建页面",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/plans/plan_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2878316000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "创建新的方案",
+        "line": 10,
+        "description": "",
+        "id": "王五-登陆系统并进入方案页面,-可以创建方案。;创建新的方案",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "我是\"王五\"登陆方案创建页面",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/plans/plan_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "我输入创建方案的内容",
+            "line": 12,
+            "match": {
+              "location": "features/steps_definitions/plans/plan_create_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3018535000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "点击创建方案的按钮",
+            "line": 13,
+            "match": {
+              "location": "features/steps_definitions/plans/plan_create_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4018192000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "我在方案列表中看见新创建的方案",
+            "line": 14,
+            "match": {
+              "location": "features/steps_definitions/plans/plan_create_steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17737000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "value": "#!/bin/env ruby",
+        "line": 1
+      },
+      {
+        "value": "# encoding: utf-8",
+        "line": 2
+      }
+    ],
+    "keyword": "Feature",
+    "name": "When user login the page, he could create a new task",
+    "line": 4,
+    "description": "\nAs Mr 张\nI would like to create a new task\nSo that I could track my tasks\n\nGiven I am \"张三\" to login the system",
+    "id": "when-user-login-the-page,-he-could-create-a-new-task",
+    "uri": "features/support/cases/tasks/task_base.feature"
+  },
+  {
+    "comments": [
+      {
+        "value": "#!/bin/env ruby",
+        "line": 1
+      },
+      {
+        "value": "# encoding: utf-8",
+        "line": 2
+      }
+    ],
+    "keyword": "Feature",
+    "name": "When user 张三 login and navigate to the task page, she/he could create a new task.",
+    "line": 5,
+    "description": "",
+    "tags": [
+      {
+        "name": "@task",
+        "line": 4
+      }
+    ],
+    "id": "when-user-张三-login-and-navigate-to-the-task-page,-she/he-could-create-a-new-task.",
+    "uri": "features/support/cases/tasks/task_create.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "line": 7,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am \"张三\" to login the system",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 582139000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "navigate to create task page",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_create_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2483603000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Create new task",
+        "line": 11,
+        "description": "",
+        "id": "when-user-张三-login-and-navigate-to-the-task-page,-she/he-could-create-a-new-task.;create-new-task",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am \"张三\" to login the system",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 197000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "navigate to create task page",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_create_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user input details for create new task",
+            "line": 13,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_create_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7030864000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "click confirm button",
+            "line": 14,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_create_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4009566000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "user could see the new task will on the top of the task list",
+            "line": 15,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_create_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2110166000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "comments": [
+      {
+        "value": "#!/bin/env ruby",
+        "line": 1
+      },
+      {
+        "value": "# encoding: utf-8",
+        "line": 2
+      }
+    ],
+    "keyword": "Feature",
+    "name": "承接人接受或者拒绝任务",
+    "line": 4,
+    "description": "",
+    "tags": [
+      {
+        "name": "@task",
+        "line": 3
+      }
+    ],
+    "id": "承接人接受或者拒绝任务",
+    "uri": "features/support/cases/tasks/task_operation.feature",
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "line": 6,
+        "description": "",
+        "type": "background",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am \"张三\" to login the system",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 744203000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I create a new task",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7213912000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "接受任务",
+        "line": 11,
+        "description": "",
+        "id": "承接人接受或者拒绝任务;接受任务",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am \"张三\" to login the system",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 163000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I create a new task",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "我在该任务详情页面点击“接受任务”",
+            "line": 13,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_operation_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3463036000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "该任务出现在“我的承接”的“已承接”列表",
+            "line": 14,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_operation_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3532271000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "该任务出现在“我的承接”的“全部”列表",
+            "line": 15,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_operation_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1052028000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "拒绝任务",
+        "line": 18,
+        "description": "",
+        "id": "承接人接受或者拒绝任务;拒绝任务",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am \"张三\" to login the system",
+            "line": 8,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 773914000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I create a new task",
+            "line": 9,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_base_steps.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7268055000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "我在该任务详情页面点击“拒绝任务”",
+            "line": 20,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_operation_steps.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3393486000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "该任务出现在“我的承接”的“已拒绝”列表",
+            "line": 21,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_operation_steps.rb:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3355312000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "该任务出现在“我的承接”的“全部”列表",
+            "line": 22,
+            "match": {
+              "location": "features/steps_definitions/tasks/task_operation_steps.rb:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1311613000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
