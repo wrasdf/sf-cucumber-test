@@ -7,6 +7,6 @@ group :test do
   gem "rspec", :require => "spec"
   gem "poltergeist"
   gem "site_prism"
-  gem "selenium-webdriver"
+  gem "selenium-webdriver", ">= 2.34.0"
   gem "capybara-screenshot"
 end
